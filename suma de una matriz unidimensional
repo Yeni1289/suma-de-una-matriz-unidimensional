@@ -1,0 +1,25 @@
+import javax.swing.JOptionPane;
+public class Precio {
+    public static void main(String []args){
+        int Suma=0;
+        int y;
+        int x;
+        int Vector[]=new int [5];
+        String Encabezado []={"HB","HF","PR","OM","total"};
+        for (x=0;x<5;x++){
+            System.out.print(Encabezado[x]+"   ");
+        }
+        
+        System.out.println(" ");
+        
+        for (y=1;y<=4;y++){
+            
+            Vector[y]=Integer.parseInt(JOptionPane.showInputDialog("ingresa la cantidad de los productos "));
+            Suma+=Vector[y];
+            System.out.print(Vector[y]+ "   ");
+
+        }
+        System.out.print(" "+ Suma);
+    }
+    
+}
